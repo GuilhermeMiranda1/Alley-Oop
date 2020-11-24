@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info +Basquete</title>
+    <link rel="SHORTCUT ICON" href="img/imagem-bola-logo.png">
     <link rel="stylesheet" href="css/info-maisbasquete.css">
 </head>
 
@@ -20,7 +21,7 @@
             <div class="menu-div">
                 <nav class="menu">
                     <ul>
-                        <li> <a class="mais-basquete" href="index.html"> <b>+Basquete</b></a> </li>
+                        <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b>+Basquete</b></a> </li>
                         <li> <a class="contato" href="index.html"> <b>Contato</b></a></li>
                         <li> <a class="quem-somos" href="index.html"><b>Quem somos </b></a> </li>
                         <li> <a class="entrar" href="index.html"> <b>Entrar</b></a></li>
@@ -29,8 +30,37 @@
             </div>
         </div>
         <div class="afinal">
-            <div class="o-que-e-maisbaquete"> Afinal, o que é o +Basquete? </div>
+            <br>
+            Afinal, o que é o <br>
+            <span style="color:red">+Basquete</span>?
+        </div>
+
+        <div class="troca"></div>
+
+        <div class="explicacao">
+            <span class="letters">O +Basquete, basicamente falando, é um programa criado para quem gosta de jogar, <br>
+                mas ainda está perdido em qual posição quer jogar, ou por não conhecer bem o próprio estilo <br> ou por
+                simplesmente não conhecer as posições em quadra.
+                O processo é feito identificando as suas características <br> de jogo e as comparado com a sua altura
+                (que é um fator muito importante no basquete). <br>
+                Além de te informar sobre a função mais provável pro seu estilo de jogo, <br> o programa também te dá
+                opções de treinos focados nessa posição. <br> Clique para começar agora mesmo!</span>
+            <br><br><button onclick="trocatela()" class="button-infomaisbasquete"><span>COMEÇAR</span></button>
+        </div>
+        <div class="troca"></div>
+        <div class="footer">
+            ALLEY-OOP® 2020
+            <br>
+            <img src="img/logo-mesclado.png" style="width: 70px; margin-top: 0%;" alt="">
+            <p style="margin-top: 0% ;">Feito com &#x2764;</p>
+
         </div>
     </body>
 
 </html>
+
+<script>
+    function trocatela() {
+        window.location.href = "maisbasquete.html";
+    }
+</script>
