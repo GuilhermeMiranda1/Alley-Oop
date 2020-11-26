@@ -85,7 +85,8 @@ html {
 
 .inputs-esquerda{
     width: 50%;
-    background-color: blue;
+    margin-left: 5%;
+
     height: 600px;
     font-size: 30px;
     color: white;
@@ -111,14 +112,38 @@ input{
 
 .inputs-direita{
     margin-top: -43.8%;
-    margin-left: 50%;
+    margin-left: 44%;
     width: 50%;
     height: 600px;
-    background-color: green;
+
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #0000003a;
     text-shadow: 2px 2px #000000;
     text-align: center;
     font-size: 30px;
+}
+
+.button-maisbasquete{
+    font-size: 24px;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    margin-left: -75%;
+    background-color: #FDB927;
+    color: #552583;
+    outline-style: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000; 
+    text-shadow: 1px 1px #552583;
+    cursor: pointer;
+}
+
+.button-maisbasquete:hover{
+    transition: 0.5s;
+    color: red;
+    background-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000; 
+    text-shadow: 1px 1px #552583;
 }
