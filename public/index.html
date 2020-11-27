@@ -7,11 +7,12 @@
     <title>Home</title>
     <link rel="SHORTCUT ICON" href="img/imagem-bola-logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
 
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="logo-div" href="index.html">
             <img src="img/logo.png" alt="alley-oop" href="index.html" class="logo">
             <a href="index.html"><img src="img/imagem-bola-logo.png" alt="imagem-bola" class="logo-img"></a>
@@ -23,32 +24,34 @@
                     <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b>+Basquete</b></a> </li>
                     <li> <a class="contato" href="index.html"> <b>Contato</b></a></li>
                     <li> <a class="quem-somos" href="#container2"><b>Quem somos </b></a> </li>
-                    <li> <a class="entrar" href="index.html"> <b>Entrar</b></a></li>
+                    <li> <a class="entrar" href="login.html"> <b>Entrar</b></a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    <div class="container-1" >
+    <div class="container-1">
         <div class="filho-container-1">
             <img id="sitecompleto" src="img/Sem Título-1.png" class="site-completo" alt="">
 
             <div class="estatisticas"> <b><a href="#info">Saiba todas as <br> estatísticas dos jogos</a></b></div>
             <div class="calendario"><b> <a href="#info">Acompanhe o calendário <br> da temporada</a></b></div>
             <div class="seujogo"><b><a href="#maisbasqueteclique">Descubra o SEU jogo e <br> o aperfeiçoe</a></b></div>
-            <div class="draft"><b><a href="#draftclique">Fique por dentro das <br> informações do DRAFT 2020<a></b></div>
+            <div class="draft"><b><a href="#draftclique">Fique por dentro das <br> informações do DRAFT 2020<a></b>
+            </div>
         </div>
     </div>
 
     <!-- deslizar da pagina -->
+    <span id="topo" style="position: absolute; margin-top: -100%;"></span>
     <span id="maisbasqueteclique" style="position: absolute; margin-top: -11%;"></span>
     <span id="draftclique" style="position: absolute; margin-top: 29%;"></span>
     <span id="info" style="position: absolute; margin-top: 60%;"></span>
-    
+
 
     <div class="troca"></div>
-    
-    <div class="container-2" >
+
+    <div class="container-2">
         <img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 47%;">
 
         <div class="perfil-jogador">
@@ -64,7 +67,7 @@
                 Veja os melhores jogadores desta posição, encontre treinos para melhorar sua função e se torne <br> cada
                 vez melhor! </p>
         </div>
-        <button class="button-maisbasquete"><b>MONTAR PERFIL!</b></button>
+        <button class="button-maisbasquete" onclick="paginaMaisbasquete()"><b>MONTAR PERFIL!</b></button>
     </div>
     <div class="troca"></div>
 
@@ -101,10 +104,9 @@
         <br>
         <img src="img/logo-mesclado.png" style="width: 70px; margin-top: 0%;" alt="">
         <p style="margin-top: 0% ;">Feito com &#x2764;</p>
+        <div style="margin-left: 50%; margin-top: -8.4%;"><a href="#topo"><u> voltar ao topo da pagina</u></a></div>
 
     </div>
-
-
 </body>
 
 <script>

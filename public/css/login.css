@@ -1,0 +1,75 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+}
+
+.div-login{
+    height: 400px;
+    margin-top: 2%;
+    font-size: 25px;
+
+}
+
+.login{
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
+    color: #202124;
+    font-size: 16px;
+    height: 22px;
+    margin: 1px 1px 0 1px;
+    padding: 13px 15px;
+    outline-color: #b06af2;
+}
+
+.senha{
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
+    color: #202124;
+    font-size: 16px;
+    height: 22px;
+    margin: 1px 1px 0 1px;
+    padding: 13px 15px;
+    outline-color: #b06af2;
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+}
+
+.translucido{
+    margin-top: 5%;
+    padding-top: 4% ;
+    margin-left: 30%;
+    height: 570px;
+    width: 550px;
+    background-color: #562583e7;
+    border-radius: 25px;
+    border:solid;
+    border-color: #FDB927;
+    -webkit-box-shadow: 4px 10px 35px 17px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 10px 35px 17px rgba(0,0,0,0.75);
+box-shadow: 4px 10px 35px 17px rgba(0,0,0,0.75);
+}
+
+.clique-aqui{
+    color: #FDB927;
+}
+
+.clique-aqui:hover{
+    transition: 0.2s;
+    color: #b06af2;
+}
+
+.button-entrar{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FDB927;
+    font-size: 22px;
+    color: #552583;
+    outline-style: none;
+}
+
+.button-entrar:hover{
+    transition: 0.5s;
+    color: rgb(189, 50, 0);
+}
+
