@@ -8,9 +8,10 @@
     <link rel="SHORTCUT ICON" href="img/imagem-bola-logo.png">
     <link rel="stylesheet" href="css/maisbasquete.css">
     <script src="js/maisbasquete.js"></script>
+    <script src="js/carousel.js"></script>
 </head>
 
-<body>
+<body onLoad="slide1()">
     <div class="header">
         <div class="logo-div" href="index.html">
             <img src="img/logo.png" alt="alley-oop" href="index.html" class="logo">
@@ -23,50 +24,61 @@
                     <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b>+Basquete</b></a> </li>
                     <li> <a class="contato" href="index.html"> <b>Contato</b></a></li>
                     <li> <a class="quem-somos" href="#container2"><b>Quem somos </b></a> </li>
-                    <li> <a class="entrar" href="index.html"> <b>Entrar</b></a></li>
+                    <li> <a class="entrar" href="login.html"> <b>Entrar</b></a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
     <div class="container-1">
-
-
+        <img id="id-imagem" src="img/banner-kobe.png">
     </div>
     <div class="troca"></div>
 
     <div class="container-2">
-        <div class="inputs-esquerda">
-            <br>
-            Informe seu peso (kg) <br>
-            <input class="input" type="text" id="pesoUsuario" placeholder="ex: 100">
-            <br><br>
-            Informe sua altura (cm) <br>
-            <input class="input" type="text" id="alturaUsuario" placeholder="ex: 190">
+        <div class="primeira-parte">
+            <div class="inputs-esquerda">
+                <br>
+                Informe seu peso (kg) <br>
+                <input class="input" type="text" id="pesoUsuario" placeholder="ex: 100">
+                <br><br>
+                Informe sua altura (cm) <br>
+                <input class="input" type="text" id="alturaUsuario" placeholder="ex: 190">
+            </div>
+            <div class="inputs-direita">
+                <br>
+                Escolha um estilo <br>
+                <select style="width: 200px; height: 40px; text-align: center;" id="escolherEstilo">
+                    <option value="escolha"></option>
+                    <option value="infiltração">Infiltração</option>
+                    <option value="arremesso2pts">Arremesso de 2 pontos</option>
+                    <option value="arremesso3pts">Arremesso de 3 pontos</option>
+                    <option value="organizarJogadas">Organização de jogadas</option>
+                    <option value="garrafao">Garrafão</option>
+                </select>
+                <BR></BR>
+                Escolha outro estilo <br>
+                <select style="width: 200px; height: 40px; text-align: center;" id="tipoJogo">
+                    <option value="escolha"></option>
+                    <option value="forca">Força</option>
+                    <option value="drible">Drible</option>
+                    <option value="velocidade">Velocidade</option>
+                    <option value="defesa">Defesa</option>
+                    <option value="arremesso">Arremesso</option>
+                </select>
+                <br>
+                <button class="button-maisbasquete" onclick="descobrir()">DESCOBRIR</button><br>
+            </div>
+            <div class="resultado">
+
+            </div>
         </div>
-        <div class="inputs-direita">
+
+        <div class="footer">
+            ALLEY-OOP® 2020
             <br>
-            Escolha um estilo <br>
-            <select style="width: 200px; height: 40px; text-align: center;" id="escolherEstilo">
-                <option value="escolha"></option>
-                <option value="infiltração">Infiltração</option>
-                <option value="arremesso2pts">Arremesso de 2 pontos</option>
-                <option value="arremesso3pts">Arremesso de 3 pontos</option>
-                <option value="organizarJogadas">Organização de jogadas</option>
-                <option value="garrafao">Garrafão</option>
-            </select>
-            <BR></BR>
-            Escolha outro estilo <br>
-            <select style="width: 200px; height: 40px; text-align: center;" id="tipoJogo">
-                <option value="escolha"></option>
-                <option value="forca">Força</option>
-                <option value="drible">Drible</option>
-                <option value="velocidade">Velocidade</option>
-                <option value="defesa">Defesa</option>
-                <option value="arremesso">Arremesso</option>
-            </select>
-            <br>
-            <button class="button-maisbasquete" onclick="descobrir()">DESCOBRIR</button><br>
+            <img src="img/logo-mesclado.png" style="width: 70px; margin-top: 0%;" alt="">
+            <p style="margin-top: 0% ;">Feito com &#x2764;</p>
         </div>
     </div>
 

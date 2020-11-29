@@ -5,5 +5,8 @@ function descobrir() {
         "estilo": escolherEstilo.value,
         "tipo": tipoJogo.value
     };
-    console.log(infoUsuario);
+
+    if(infoUsuario.altura <= 175){
+        
+    }
 }
