@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +7,11 @@
     <link rel="SHORTCUT ICON" href="img/imagem-bola-logo.png">
     <link rel="stylesheet" href="css/maisbasquete.css">
     <script src="js/maisbasquete.js"></script>
-    <script src="js/carousel.js"></script>
+
 </head>
 
-<body onLoad="slide1()">
-    <div class="header">
+<body>
+    <div class="header" id="header">
         <div class="logo-div" href="index.html">
             <img src="img/logo.png" alt="alley-oop" href="index.html" class="logo">
             <a href="index.html"><img src="img/imagem-bola-logo.png" alt="imagem-bola" class="logo-img"></a>
@@ -21,9 +20,9 @@
         <div class="menu-div">
             <nav class="menu">
                 <ul>
-                    <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b>+Basquete</b></a> </li>
-                    <li> <a class="contato" href="index.html"> <b>Contato</b></a></li>
-                    <li> <a class="quem-somos" href="#container2"><b>Quem somos </b></a> </li>
+                    <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b style="color:#c07cff;">+Basquete</b></a> </li>
+                    <li> <a class="contato" href="contato.html"> <b>Contato</b></a></li>
+                    <li> <a class="quem-somos" href="quemsomos.html"><b>Quem somos </b></a> </li>
                     <li> <a class="entrar" href="login.html"> <b>Entrar</b></a></li>
                 </ul>
             </nav>
@@ -31,56 +30,52 @@
     </div>
 
     <div class="container-1">
-        <img id="id-imagem" src="img/banner-kobe.png">
-    </div>
-    <div class="troca"></div>
+        <div class="filho-container-1"> <br><br><br><br><br><br>    
+            <span style="margin-left: 5%;">Informe sua altura (cm)</span>  <span style="margin-left: 29.5%;"> Escolha um estilo de jogo</span> <br>
+            <input style="width: 130px; margin-left: 8%; height: 20px; border-radius: 10px;" type="text" id="alturaUsuario" placeholder="ex: 190"> 
+            <select style="width: 200px; height: 40px; margin-left: 44%; border-radius: 15px;" id="escolherEstilo">
+                <option value="escolha"></option>
+                <option value="infiltração">Infiltração</option>
+                <option value="arremesso2pts">Arremesso de 2 pontos</option>
+                <option value="arremesso3pts">Arremesso de 3 pontos</option>
+                <option value="organizarJogadas">Organização de jogadas</option>
+                <option value="garrafao">Garrafão</option>
+            </select>
 
-    <div class="container-2">
-        <div class="primeira-parte">
-            <div class="inputs-esquerda">
-                <br>
-                Informe seu peso (kg) <br>
-                <input class="input" type="text" id="pesoUsuario" placeholder="ex: 100">
-                <br><br>
-                Informe sua altura (cm) <br>
-                <input class="input" type="text" id="alturaUsuario" placeholder="ex: 190">
-            </div>
-            <div class="inputs-direita">
-                <br>
-                Escolha um estilo <br>
-                <select style="width: 200px; height: 40px; text-align: center;" id="escolherEstilo">
-                    <option value="escolha"></option>
-                    <option value="infiltração">Infiltração</option>
-                    <option value="arremesso2pts">Arremesso de 2 pontos</option>
-                    <option value="arremesso3pts">Arremesso de 3 pontos</option>
-                    <option value="organizarJogadas">Organização de jogadas</option>
-                    <option value="garrafao">Garrafão</option>
-                </select>
-                <BR></BR>
-                Escolha outro estilo <br>
-                <select style="width: 200px; height: 40px; text-align: center;" id="tipoJogo">
-                    <option value="escolha"></option>
-                    <option value="forca">Força</option>
-                    <option value="drible">Drible</option>
-                    <option value="velocidade">Velocidade</option>
-                    <option value="defesa">Defesa</option>
-                    <option value="arremesso">Arremesso</option>
-                </select>
-                <br>
-                <button class="button-maisbasquete" onclick="descobrir()">DESCOBRIR</button><br>
-            </div>
-            <div class="resultado">
-
-            </div>
+            <br><br>
+            <span style="margin-left: 5.3%;"> Informe seu peso (kg)</span> <span style="margin-left: 32%;"> Escolha um tipo de jogo</span> <br>
+            <input style="width: 130px; margin-left: 8%; height: 20px; border-radius: 10px;" type="text" id="pesoUsuario" placeholder="ex: 100"></span>
+            <select style="width: 200px; height: 40px; margin-left: 44%; border-radius: 15px;" id="tipoJogo">
+                <option value="escolha"></option>
+                <option value="forca">Força</option>
+                <option value="drible">Drible</option>
+                <option value="velocidade">Velocidade</option>
+                <option value="defesa">Defesa</option>
+                <option value="arremesso">Arremesso</option>
+            </select>  <br>
+            <button onclick="maisbasquete()" class="button-conferir"><b>CONFERIR</b>  </button>
         </div>
+    </div>
 
+    <div class="container2" id="container2">
+        
+
+        <div class="perfil-jogador">
+             <div id="mensagem"> </div>
+            <!-- <p
+                style="font-size:24px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
+                Descubra qual a posição em quadra ideal para você com base no seu físico e no seu estilo de jogo </p>
+
+            <p
+                style="font-size:24px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
+                Veja os melhores jogadores desta posição, encontre treinos para melhorar sua função e se torne <br> cada
+                vez melhor! </p> -->
+        </div>
+    </div>  
         <div class="footer">
             ALLEY-OOP® 2020
             <br>
             <img src="img/logo-mesclado.png" style="width: 70px; margin-top: 0%;" alt="">
             <p style="margin-top: 0% ;">Feito com &#x2764;</p>
         </div>
-    </div>
-
-    </div>
-    </div>
+    
