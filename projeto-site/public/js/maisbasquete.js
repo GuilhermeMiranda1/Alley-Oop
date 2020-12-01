@@ -8,7 +8,7 @@ function maisbasquete() {
     };
     console.log(infoUsuario)
 
-    // ARMADOR POR ALTURA
+
     if (infoUsuario.altura < 170 && infoUsuario.altura >= 140) {
         document.getElementById("container2").style.display = "block";
 
@@ -18,12 +18,12 @@ function maisbasquete() {
                  style="color:red;">ARMADOR</span></h2> <br> <br>
                  <p
                 style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
-                Sua altura irá acabar te impedindo de executar  <br>  outras funções de forma efetiva, <br> portanto  a  posição recomendada para você jogar <br> é a de ARMADOR </p>
+                Sua altura irá acabar te impedindo de executar  <br>  outras funções de forma efetiva, <br> portanto  a  posição recomendada para você  <br> jogar é a de ARMADOR </p>
                 <br><br>     <button onclick="treinosArmador()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para armador<b></button>`
 
     }
 
-    // ARMADOR ORG. JOGADAS
+    
     if (infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "organizarJogadas") {
         document.getElementById("container2").style.display = "block";
 
@@ -38,7 +38,7 @@ function maisbasquete() {
 
     }
 
-    // ARMADOR 3 PTS + ARREMESSO OU DRIBLE
+    
     if (infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso3pts" && infoUsuario.tipo =="drible" || infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso3pts" && infoUsuario.tipo =="arremesso"  ) {
         document.getElementById("container2").style.display = "block";
 
@@ -52,7 +52,7 @@ function maisbasquete() {
             <br><br>     <button onclick="treinosArmador()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para armador<b></button>`
 
     }
-    // ARMADOR 2 PTS X
+    
     if (infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso2pts" &&  infoUsuario.tipo == "drible" || infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "arremesso") {
         document.getElementById("container2").style.display = "block";
 
@@ -67,7 +67,7 @@ function maisbasquete() {
 
     }
 
-    // ALA-ARMADOR 2 ARREMESSO/VELOCIDADE/FORÇA
+    
     if (infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso2pts"   &&  infoUsuario.tipo == "velocidade" || infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "forca" || infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso2pts"  && infoUsuario.tipo == "defesa") {
         document.getElementById("container2").style.display = "block";
 
@@ -81,7 +81,7 @@ function maisbasquete() {
             <br><br>     <button onclick="treinosAlaArmador()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala-armador<b></button>`
 
     }
-    // ALA-ARMADOR 2 INFILT
+    
     if (infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "infiltracao"){
         document.getElementById("container2").style.display = "block";
 
@@ -125,7 +125,7 @@ function maisbasquete() {
 
     }
 
-    if (infoUsuario.altura > 195 && infoUsuario.estilo == "infiltracao"){
+    if (infoUsuario.altura > 195 && infoUsuario.estilo == "infiltracao" && infoUsuario.tipo == "forca" || infoUsuario.altura > 195 && infoUsuario.estilo == "infiltracao" && infoUsuario.tipo == "defesa"){
         document.getElementById("container2").style.display = "block";
 
         mensagem.innerHTML = `<img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 52%;">
@@ -138,6 +138,65 @@ function maisbasquete() {
             <br><br>     <button onclick="treinosAlaPivo()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala-pivo<b></button>`
 
     }
+
+    if (infoUsuario.altura > 195 && infoUsuario.estilo == "infiltracao" && infoUsuario.tipo == "drible" || infoUsuario.altura > 195 && infoUsuario.estilo == "infiltracao" && infoUsuario.tipo == "arremesso"){
+        document.getElementById("container2").style.display = "block";
+
+        mensagem.innerHTML = `<img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 52%;">
+    <h2 style="margin-left:-20%; margin-top:-35%;font-size: 33px;text-align:center; text-shadow: 2px 2px #000000; -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.131);; color: #FDB927;">Você tem o perfil de<br> <span
+             style="color:red;">ALA-ARMADOR</span></h2> <br> <br>
+             <p
+            style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
+            Você é do tipo que infiltra na defesa adversária <br> atropelando quem estiver pela frente.  <br> Portanto a posição recomendada para você  <br> jogar é a de ALA-ARMADOR </p>
+            <br><br>     <button onclick="treinosAlaArmador()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala-armador<b></button>`
+
+    }
+
+    if (infoUsuario.altura > 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "defesa" || infoUsuario.altura > 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "arremesso" || infoUsuario.altura > 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "forca"){
+        document.getElementById("container2").style.display = "block";
+
+        mensagem.innerHTML = `<img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 52%;">
+    <h2 style="margin-left:-20%; margin-top:-35%;font-size: 33px;text-align:center; text-shadow: 2px 2px #000000; -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.131);; color: #FDB927;">Você tem o perfil de<br> <span
+             style="color:red;">ALA-PIVO</span></h2> <br> <br>
+             <p
+            style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
+            Você é um jogador alto mas que gosta <br> de fundamentos de armador, porém com a sua  <br> altura.  a posição recomendada para você  <br> jogar é a de ALA-PIVO </p>
+            <br><br>     <button onclick="treinosAlaPivo()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala-pivo<b></button>`
+
+    }
+
+    if (infoUsuario.altura > 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "velocidade" || infoUsuario.altura > 195 && infoUsuario.estilo == "arremesso2pts" && infoUsuario.tipo == "drible"){
+        document.getElementById("container2").style.display = "block";
+
+        mensagem.innerHTML = `<img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 52%;">
+    <h2 style="margin-left:-20%; margin-top:-35%;font-size: 33px;text-align:center; text-shadow: 2px 2px #000000; -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.131);; color: #FDB927;">Você tem o perfil de<br> <span
+             style="color:red;">ALA</span></h2> <br> <br>
+             <p
+            style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
+            Você é um jogador alto que gosta de arremessos <br> de de 2 pontos e ritmo  <br> no jogo. Portanto a posição recomendada para <br> você jogar é a de ALA </p>
+            <br><br>     <button onclick="treinosAla()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala<b></button>`
+
+    }
+
+    if (infoUsuario.altura > 195 && infoUsuario.estilo == "arremesso3pts"){
+        document.getElementById("container2").style.display = "block";
+
+        mensagem.innerHTML = `<img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 52%;">
+    <h2 style="margin-left:-20%; margin-top:-35%;font-size: 33px;text-align:center; text-shadow: 2px 2px #000000; -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.131);; color: #FDB927;">Você tem o perfil de<br> <span
+             style="color:red;">ARMADOR</span></h2> <br> <br>
+             <p
+            style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
+            Você é um jogador alto mas que gosta <br> que gosta de arremessos de 3, apesar da  <br> altura.  a posição recomendada para você  <br> jogar é a de ARMADOR </p>
+            <br><br>     <button onclick="treinosAlaPivo()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala-pivo<b></button>`
+
+    }
+
+
+
 
     if (infoUsuario.altura > 195 && infoUsuario.estilo == "organizarJogadas"){
         document.getElementById("container2").style.display = "block";

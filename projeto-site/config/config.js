@@ -1,9 +1,9 @@
 module.exports = {
   production: {
-    username: 'SEU_USUARIO_DO_BANCO_DE_DADOS',
-    password: 'SUA_SENHA_DO_BANCO_DE_DADOS',
-    database: 'NOME_DO_SEU_BANCO_DE_DADOS',
-    host: 'URL_DO_SEU_BANCO_DE_DADOS.database.windows.net',
+    username: 'alleyoop',
+    password: 'Alley-oop',
+    database: 'bd-alleyoop',
+    host: 'alley-oop.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
@@ -20,4 +20,3 @@ module.exports = {
     }
   }
 };
- 

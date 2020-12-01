@@ -1,37 +1,72 @@
 <DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <title>Login</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cadastro.css">
+        <title>Login</title>
+    </head>
 
-<body>
-    <div class="translucido">
-        <div class="logo">
-            <a href="index.html"><img src="img/logo-mesclado.png" alt=""></a>
+    <body>
+        <div class="translucido">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-mesclado.png" alt=""></a>
+            </div>
+            <div class="div-login">
+                <form id="form_cadastro" method="post">
+                    <b style="color: white ;">Nome</b> <br>
+                    <input class="senha" name="nome" type="text" id="">
+                    <br> <br>
+                    <b style="color: white;">Nome de usuário</b> <br>
+                    <input class="login" name="login" type="text" id="">
+                    <br><br>
+                    <b style="color: white ;">Senha</b> <br>
+                    <input class="senha" name="senha" type="password" id=""> <br> <br> <br> <br>
+                    <button id="btn_entrar" class="button-entrar" onclick="cadastrar()">Cadastrar</button>    <br>
+                    <span style="color:#FDB927; font-size:22px"> Já tem uma conta? <a href="login.html"><u
+                        class="clique-aqui"> clique aqui</u></a></span>
+                </form>
+            </div>
+
         </div>
-        <div class="div-login">
-            
-            <b style="color: white ;">Email</b> <br>
-            <input class="senha" type="text" id="">
-            <br><br>
-            <b style="color: white;">Nome de usuário</b> <br>
-            <input class="login" type="text" id="">
-            <br><br>
-            <b style="color: white ;">Senha</b>  <br>
-            <input class="senha" type="password" id="">
-            
-            <br>
-            <br>
-            <button class="button-entrar"><b>Cadastrar</b></button>
-            <br> 
-            <span style="color:#FDB927; font-size:22px"> Já tem uma conta? <a href="login.html"><u class="clique-aqui"> clique aqui</u></a></span>
-        </div>
+    </body>
 
-    </div>
-</body>
+    </html>
 
-</html>
+    <script>
+
+        function cadastrar() {
+            aguardar();
+            var formulario = new URLSearchParams(new FormData(form_cadastro));
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+                console.log('dentro do cadastrar')
+                
+                if (response.ok) {
+                    console.log('dentro do OK')
+                    window.location.href='login.html';
+    
+                } else {
+                    console.log('Erro de cadastro!');
+                    response.text().then(function (resposta) {
+                        div_erro.innerHTML = resposta;
+                    });
+                    finalizar_aguardar();
+                }
+            });
+    
+            return false;
+        }
+    
+        function aguardar() {
+            btn_entrar.disabled = true;
+        }
+    
+        function finalizar_aguardar() {
+            btn_entrar.disabled = false;
+        }
+    
+    </script>
