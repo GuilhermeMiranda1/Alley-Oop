@@ -63,7 +63,7 @@ html {
 .container-1{
     background-color: #FDB927;
     margin-left: -0.5%;
-    width: 101.9%;
+    width: 103.5%;
     height: 500px;
 }
 .filho-container-1{
@@ -179,7 +179,7 @@ a{
 .container2{
     background-color:#52237e;
     margin-left: -0.5%;
-    width: 101.9%;
+    width: 103.9%;
     height: 500px;
     display: none;
 }
@@ -195,10 +195,10 @@ a{
 }
 
 .footer{
-    margin-top: 10%;
+    margin-top: 0%;
     width: 101.9%;
     height: 100px;
-    margin-left: -0.5%;
+    margin-left: 1%;
     background-color: black;
     text-align: center;
     color: white;
