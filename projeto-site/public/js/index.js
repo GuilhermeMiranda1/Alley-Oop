@@ -10,10 +10,3 @@ function telaMaisBasquete(){
 function telaDraft(){
     window.location.href = "draft.html"
 }
-
-console.log(sessionStorage.nome_usuario_meuapp)
-
-if ( sessionStorage.nome_usuario_meuapp != ""){
-        x = document.getElementById(verif)
-        x = sessionStorage.nome_usuario_meuapp;
-};

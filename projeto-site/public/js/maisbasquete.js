@@ -36,7 +36,7 @@ function maisbasquete() {
             Seu estilo é armar o jogo pro seu time  <br>  e abrir brechas na defesa adversária, portanto a  <br> posição recomendada para você jogar <br> é a de ARMADOR </p>
             <br><br>     <button onclick="treinosArmador()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para armador<b></button>`
 
-    }
+    } 
 
     
     if (infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso3pts" && infoUsuario.tipo =="drible" || infoUsuario.altura >= 170 && infoUsuario.altura <= 195 && infoUsuario.estilo == "arremesso3pts" && infoUsuario.tipo =="arremesso"  ) {
@@ -103,11 +103,11 @@ function maisbasquete() {
         mensagem.innerHTML = `<img src="img/lillard.png" alt="Damian Lillard" style="margin-top: -0.1%; height: 500px;;margin-left: 52%;">
     <h2 style="margin-left:-20%; margin-top:-35%;font-size: 33px;text-align:center; text-shadow: 2px 2px #000000; -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.131);; color: #FDB927;">Você tem o perfil de<br> <span
-             style="color:red;">ALA</span></h2> <br> <br>
+             style="color:red;">ALA-PIVÔ</span></h2> <br> <br>
              <p
             style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
-            Você gosta de contato e arremessos <br> em suas jogadas, jogando com intensidade. <br> Portanto a posição recomendada para você  <br> jogar é a de ALA </p>
-            <br><br>     <button onclick="treinosAla()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala<b></button>`
+            Você gosta de contato e arremessos <br> em suas jogadas, jogando com intensidade. <br> Portanto a posição recomendada para você  <br> jogar é a de ALA-PIVÔ </p>
+            <br><br>     <button onclick="treinosAlaPivo()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala-pivô<b></button>`
 
     }
 

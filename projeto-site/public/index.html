@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,7 @@
                     <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b>+Basquete</b></a> </li>
                     <li> <a class="contato" href="contato.html"> <b>Contato</b></a></li>
                     <li> <a class="quem-somos" href="quemsomos.html"><b>Quem somos </b></a> </li>
-                    <li> <a class="entrar" id="verif" href="login.html"> <b>Entrar</b></a></li>
+                    <li> <a id="verif" class="entrar" href="login.html"> <b>Entrar</b></a></li>
                 </ul>
             </nav>
         </div>
@@ -108,4 +109,8 @@
 </body>
 
 <script>
+    console.log(sessionStorage.nome_usuario_meuapp)
+    if (sessionStorage.nome_usuario_meuapp) {
+        document.getElementById("verif").innerHTML = `<b>Sair<b>`;
+    };
 </script>

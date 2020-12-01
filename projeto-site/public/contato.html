@@ -23,7 +23,7 @@
                         <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b>+Basquete</b></a> </li>
                         <li> <a class="contato" href="contato.html"> <b style="color: #c07cff;">Contato</b></a></li>
                         <li> <a class="quem-somos" href="quemsomos.html"><b>Quem somos </b></a> </li>
-                        <li> <a class="entrar" href="login.html"> <b>Entrar</b></a></li>
+                        <li> <a id="verif" class="entrar" href="login.html"> <b>Entrar</b></a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,3 +54,8 @@
     </body>
 
 </html>
+<script>
+if (sessionStorage.nome_usuario_meuapp) {
+    document.getElementById("verif").innerHTML = `<b>Sair<b>`;
+};
+</script>

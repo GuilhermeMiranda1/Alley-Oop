@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +21,22 @@
         <div class="menu-div">
             <nav class="menu">
                 <ul>
-                    <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b style="color:#c07cff;">+Basquete</b></a> </li>
+                    <li> <a class="mais-basquete" href="info-maisbasquete.html"> <b
+                                style="color:#c07cff;">+Basquete</b></a> </li>
                     <li> <a class="contato" href="contato.html"> <b>Contato</b></a></li>
                     <li> <a class="quem-somos" href="quemsomos.html"><b>Quem somos </b></a> </li>
-                    <li> <a class="entrar" href="login.html"> <b>Entrar</b></a></li>
+                    <li> <a id="verif" class="entrar" href="login.html"> <b>Entrar</b></a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
     <div class="container-1">
-        <div class="filho-container-1"> <br><br><br><br><br><br>    
-            <span style="margin-left: 5%;">Informe sua altura (cm)</span>  <span style="margin-left: 29.5%;"> Escolha um estilo de jogo</span> <br>
-            <input style="width: 130px; margin-left: 8%; height: 20px; border-radius: 10px;" type="text" id="alturaUsuario" placeholder="ex: 190"> 
+        <div class="filho-container-1"> <br><br><br><br><br><br>
+            <span style="margin-left: 5%;">Informe sua altura (cm)</span> <span style="margin-left: 29.5%;"> Escolha um
+                estilo de jogo</span> <br>
+            <input style="width: 130px; margin-left: 8%; height: 20px; border-radius: 10px;" type="text"
+                id="alturaUsuario" placeholder="ex: 190">
             <select style="width: 200px; height: 40px; margin-left: 44%; border-radius: 15px;" id="escolherEstilo">
                 <option value="escolha"></option>
                 <option value="infiltracao">Infiltração</option>
@@ -43,8 +47,10 @@
             </select>
 
             <br><br>
-            <span style="margin-left: 5.3%;"> Informe seu peso (kg)</span> <span style="margin-left: 32%;"> Escolha um tipo de jogo</span> <br>
-            <input style="width: 130px; margin-left: 8%; height: 20px; border-radius: 10px;" type="text" id="pesoUsuario" placeholder="ex: 100"></span>
+            <span style="margin-left: 5.3%;"> Informe seu peso (kg)</span> <span style="margin-left: 32%;"> Escolha um
+                tipo de jogo</span> <br>
+            <input style="width: 130px; margin-left: 8%; height: 20px; border-radius: 10px;" type="text"
+                id="pesoUsuario" placeholder="ex: 100"></span>
             <select style="width: 200px; height: 40px; margin-left: 44%; border-radius: 15px;" id="tipoJogo">
                 <option value="escolha"></option>
                 <option value="forca">Força</option>
@@ -52,18 +58,24 @@
                 <option value="velocidade">Velocidade</option>
                 <option value="defesa">Defesa</option>
                 <option value="arremesso">Arremesso</option>
-            </select>  <br>
-            <a href="#arrasta"><button onclick="maisbasquete()" class="button-conferir"><b>CONFERIR</b>  </button> </a>
+            </select> <br>
+            <a href="#arrasta"><button onclick="maisbasquete()" class="button-conferir"><b>CONFERIR</b> </button> </a>
             <span id="arrasta" style="margin-top:20%;"></span>
         </div>
     </div>
 
     <div class="container2" id="container2">
-             <div id="mensagem"> </div>
-    </div>  
-        <div class="footer" id="footer">
-            ALLEY-OOP® 2020
-            <br>
-            <img src="img/logo-mesclado.png" style="width: 70px; margin-top: 0%;" alt="">
-            <p style="margin-top: 0% ;">Feito com &#x2764;</p>
-        </div>
+        <div id="mensagem"> </div>
+    </div>
+    <div class="footer" id="footer">
+        ALLEY-OOP® 2020
+        <br>
+        <img src="img/logo-mesclado.png" style="width: 70px; margin-top: 0%;" alt="">
+        <p style="margin-top: 0% ;">Feito com &#x2764;</p>
+    </div>
+
+    <script>
+        if (sessionStorage.nome_usuario_meuapp) {
+            document.getElementById("verif").innerHTML = `<b>Sair<b>`;
+        };
+    </script>
