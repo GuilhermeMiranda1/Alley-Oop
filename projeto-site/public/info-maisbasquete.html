@@ -62,9 +62,10 @@
     function trocatela() {
         window.location.href = "maisbasquete.html";
     }
-if (sessionStorage.nome_usuario_meuapp) {
-    document.getElementById("verif").innerHTML = `<b>Sair<b>`;
-};
+    if (sessionStorage.nome_usuario_meuapp) {
+        document.getElementById("verif").innerHTML = `<b>${sessionStorage.nome_usuario_meuapp}<b>`;
+        
+    };
 
 </script>
 

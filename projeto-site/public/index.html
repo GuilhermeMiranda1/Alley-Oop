@@ -111,6 +111,7 @@
 <script>
     console.log(sessionStorage.nome_usuario_meuapp)
     if (sessionStorage.nome_usuario_meuapp) {
-        document.getElementById("verif").innerHTML = `<b>Sair<b>`;
+        document.getElementById("verif").innerHTML = `<b>${sessionStorage.nome_usuario_meuapp}<b>`;
+        
     };
 </script>

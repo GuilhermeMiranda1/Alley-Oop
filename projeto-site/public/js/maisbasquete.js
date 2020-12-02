@@ -207,8 +207,8 @@ function maisbasquete() {
              style="color:red;">ALA</span></h2> <br> <br>
              <p
             style="margin-left:-20%; margin-top:-4%;font-size:25px ;text-align: center; color: white;text-shadow: 2px 2px #552583; -webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(0, 0, 0, 0.131);">
-            Você é do tipo que organiza o jogo <br> mesmo de uma posição de contato.  <br> Portanto a posição recomendada para você  <br> jogar é a de ALA-PIVO </p>
-            <br><br>     <button onclick="treinosAla()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para pivo<b></button>`
+            Você é do tipo que organiza o jogo <br> mesmo de uma posição de contato.  <br> Portanto a posição recomendada para você  <br> jogar é a de ALA </p>
+            <br><br>     <button onclick="treinosAla()" style="outline-style:none;background-color:#FDB927; width:150px; font-size:15px; border-radius:20px; margin-left:35%"><b>Clique para ver treinos para ala<b></button>`
 
     }
 
